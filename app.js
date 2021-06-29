@@ -33,29 +33,40 @@ submitBtn.addEventListener('click', ()=> {
         const ans1 = prompt('Do I wanna chase cars?');
         const ans2 = prompt('Can i fit in your lap?');
         const ans3 = prompt('Do I like to nap?');
+        const ans4 = prompt('Am I a good dog?');
+        const ans5 = prompt('Do I like to eat too much?');
 
-        console.log(name, ans1, ans2, ans3);
+        console.log(name, ans1, ans2, ans3, ans4, ans5);
         let score = 0;
 
 
         if (isYes(ans1)){ score++;
         }
 
-        console.log ('points', score);
+        console.log ('points:', score);
 
         if (isYes(ans2)){ score++;
         }
 
-        console.log('points', score);
+        console.log('points:', score);
 
         if (isYes(ans3)){ score++;
         }
         
-        console.log('points', score);
+        console.log('points:', score);
+
+        if (isYes(ans4)){ score++;
+        }
+
+        console.log('points:', score);
         
-        
+        if (isYes(ans5)){ score++;
+        }
+
+        console.log('points:', score);
+
         results.textContent = `${name} you got ${score} right!`;
-        console.log('Final Score', score, '/3');
+        console.log('Final Score', score, '/5');
     }
     else {
         console.log('come back soon');
