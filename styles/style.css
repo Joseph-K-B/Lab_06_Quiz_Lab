@@ -58,6 +58,7 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+    
 }
 
 
@@ -110,4 +111,12 @@ footer {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
 
+  }
+  img {
+      height: 25%;
+      width: 25%;
+      border-radius: 50%;
+  }
+  h1{
+      font-size: 70px;
   }
