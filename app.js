@@ -1,6 +1,6 @@
 // import functions and grab DOM elements
 
-import { isYes } from './utils.js';
+import { isYes, isNo } from './utils.js';
 
 // initialize state
 
@@ -35,7 +35,9 @@ submitBtn.addEventListener('click', ()=> {
         const ans3 = prompt('Do I like to nap?');
         const ans4 = prompt('Am I a good dog?');
         const ans5 = prompt('Do I like to eat too much?');
-        const ans6 = prompt('Am I getting old');
+        const ans6 = prompt('Am I getting old?');
+        const ans7 = prompt('Am I neglected?');
+        const ans8 = prompt('Do i act like it?');
 
         console.log(name, ans1, ans2, ans3, ans4, ans5, ans6);
         let score = 0;
@@ -66,12 +68,26 @@ submitBtn.addEventListener('click', ()=> {
 
         console.log('points:', score);
         
-        if (isYes(ans5)){ score++;
+        if (isYes(ans6)){ score++;
+        }
+
+        console.log('points', score);
+
+        if (isNo(ans7)){ score++;
         }
 
         console.log('points:', score);
-        results.textContent = `${name} you got ${score}/6 right!`;
-        console.log('Final Score', score, '/6');
+
+        if (isYes(ans8)){ score++;
+        }
+
+        console.log('points:', score);
+
+
+
+
+        results.textContent = `${name} you got ${score}/8 right!`;
+        console.log('Final Score', score, '/8');
     }
     else {
         console.log('come back soon');

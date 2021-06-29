@@ -16,7 +16,7 @@ export function isYes(word){
 export function isNo(word){
     word = word.toLowerCase();
 
-    if (word === 'no' || word === 'nah'){
+    if (word === 'no' || word === 'nah' || word === 'n'){
         return true;
     } else {
         return false;
