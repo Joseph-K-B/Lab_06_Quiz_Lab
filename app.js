@@ -70,8 +70,8 @@ submitBtn.addEventListener('click', ()=> {
         }
 
         console.log('points:', score);
-        results.textContent = `${name} you got ${score} right!`;
-        console.log('Final Score', score, '/5');
+        results.textContent = `${name} you got ${score}/6 right!`;
+        console.log('Final Score', score, '/6');
     }
     else {
         console.log('come back soon');
