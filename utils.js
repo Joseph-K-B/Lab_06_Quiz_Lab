@@ -1,4 +1,4 @@
-import { isYes } from "./utils";
+
 
 
 export function isYes(word){
@@ -6,7 +6,7 @@ export function isYes(word){
     //return true or false
     word = word.toLowerCase();
 
-    if (word === 'yes' || word === 'y'){
+    if (word === 'yes' || word === 'y' || word === 'yasss'){
         return true;
     } else {
         return false;
