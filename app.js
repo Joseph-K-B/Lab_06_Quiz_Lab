@@ -35,8 +35,9 @@ submitBtn.addEventListener('click', ()=> {
         const ans3 = prompt('Do I like to nap?');
         const ans4 = prompt('Am I a good dog?');
         const ans5 = prompt('Do I like to eat too much?');
+        const ans6 = prompt('Am I getting old');
 
-        console.log(name, ans1, ans2, ans3, ans4, ans5);
+        console.log(name, ans1, ans2, ans3, ans4, ans5, ans6);
         let score = 0;
 
 
@@ -64,7 +65,11 @@ submitBtn.addEventListener('click', ()=> {
         }
 
         console.log('points:', score);
+        
+        if (isYes(ans5)){ score++;
+        }
 
+        console.log('points:', score);
         results.textContent = `${name} you got ${score} right!`;
         console.log('Final Score', score, '/5');
     }
