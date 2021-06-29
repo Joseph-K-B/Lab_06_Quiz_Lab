@@ -57,6 +57,8 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
+    font-family:'Shadows Into Light', cursive;
+    font-size: 30px;
 }
 
 header {
@@ -78,8 +80,10 @@ footer {
 
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 3rem;
     font-weight: bold;
+    text-decoration: underline;
+
 }
 
 .gutter-right {
@@ -132,8 +136,8 @@ footer {
       flex-direction: column;
       align-content: center;
       align-items: center;
-      height: 25%;
-      width: 25%;
+      height: 35%;
+      width: 35%;
       border-radius: 50%;
       border-style: solid;
       border-color: black;
