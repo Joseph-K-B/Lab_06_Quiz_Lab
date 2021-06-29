@@ -12,4 +12,13 @@ export function isYes(word){
         return false;
     }
 }
-    
+
+export function isNo(word){
+    word = word.toLowerCase();
+
+    if (word === 'no' || word === 'nah'){
+        return true;
+    } else {
+        return false;
+    }
+}
