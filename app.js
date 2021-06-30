@@ -48,7 +48,7 @@ submitBtn.addEventListener('click', ()=> {
 
         console.log ('points:', score);
 
-        if (isYes(ans2)){ score++;
+        if (isNo(ans2)){ score++;
         }
 
         console.log('points:', score);
