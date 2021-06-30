@@ -21,7 +21,13 @@ body {
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
 }
-
+ol{
+    list-style:decimal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 main {
     display: flex;
     flex-direction: column;
